@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_header {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  gap: .5rem;
+}
+
+form {
+  display: flex;
+  gap: .3rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px auto;
+  color: white;
+}
+
+#select,
+input {
+  font-size: 1.3rem;
+  flex: 1;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.input input {
+  border-radius: 5px;
+  border: 1px white solid;
+  height: 28px;
+}
+
+.input button {
+  height: 28px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.circulo {
+  width: 15px;
+  height: 15px;
+  background-image: linear-gradient(to bottom, #bb1111, #a75a0e, #ffff00);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: translate(-50%, 60%) rotate(0deg) translateX(120px) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, 60%) rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+:root {
+  background: linear-gradient(to right, hsl(186, 32%, 61%), rgb(70, 80, 86));
+  --very-dark-desaturated: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  animation: fire-animation 2s linear infinite alternate;
+  background-image: url("images/painel-festa-redondo-pokemon-1-3d-sublim-1-80-dia-decoracao-de-aniversario-fotor-20240330213558.png"), url("images/tres.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 55vw bottom 40vh, left 55vw top 40vh;
+}
+
+@keyframes fire-animation {
+  0% {
+    background-color: #597283;
+    /* Naranja */
+  }
+
+  50% {
+    background-color: #232672;
+    /* Rojo */
+  }
+
+  100% {
+    background-color: #111728;
+    /* Naranja */
+  }
+}
+
+.flex {
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  width: 326px;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-header {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+}
+
+.card-body-img {
+  width: 200px;
+  height: 250px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: calc(-100px - 5px);
+  background-color: white;
+}
+
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.card-body-title span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.card-footer-social {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-footer-social p {
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
+#pokeball-container {
+  width: 400px;
+  /* Ancho del contenedor */
+  height: 400px;
+  /* Altura del contenedor */
+  position: relative;
+  /* Posición relativa para contener la imagen */
+}
+
+#pokeball {
+  width: 100%;
+  /* Ancho de la imagen igual al del contenedor */
+  height: 100%;
+  /* Altura de la imagen igual al del contenedor */
+  position: absolute;
+  /* Posición absoluta para posicionar la imagen dentro del contenedor */
+  animation: spin 2s linear infinite;
+  /* Animación de rotación */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* Estado inicial de la rotación */
+  100% {
+    transform: rotate(360deg);
+  }
+
+  /* Estado final de la rotación */
+}
+
+
+#pokeball-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width:1220px) {
+  .container_header {
+    width: 25%;
+  }
+}
+
+@media (max-width:1110px) {
+  .container_header {
+    width: 30%;
+  }
+}
+
+@media (max-width:870px) {
+  .container_header {
+    width: 35%;
+  }
+}
+@media (max-width:710px) {
+  .container_header {
+    width: 45%;
+  }
+}
+@media (max-width:560px) {
+  .container_header {
+    width: 60%;
+  }
+}
+@media (max-width:461px) {
+  .container_header {
+    width: 70%;
+  }
+}
