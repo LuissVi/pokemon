@@ -18,6 +18,11 @@ Este es un proyecto simple de Pokédex creado con HTML, CSS, jQuery y AJAX. Util
 
 ## Imagen del proyecto
 
+## 🔗 Enlace al proyecto
+
+👉 [https://lva-pokemon.netlify.app/](https://lva-pokemon.netlify.app/)
+
+
 ![Captura del proyecto](images/CapturaPoke.PNG) <!-- Puedes borrar esta línea si no tienes una imagen -->
 
 ## Cómo usar el proyecto
